@@ -21,14 +21,15 @@ print(all)
 
 
 # core
-
-arr = np.arange(1,7)
-np.random.shuffle(arr)
-print(arr)
-two_more = np.random.choice(arr[:4], 2, replace=False)
-print(two_more)
-core = np.append(arr,two_more) 
-print(core) 
+def core_fn():
+    arr = np.arange(1,7)
+    np.random.shuffle(arr)
+    print(arr)
+    two_more = np.random.choice(arr[:4], 2, replace=False)
+    print(two_more)
+    core = np.append(arr,two_more) 
+    print(core) 
+    return core
 
 # grid zeros
 
