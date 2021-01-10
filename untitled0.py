@@ -39,23 +39,24 @@ print(grid[2])
 
 
 # start grid
+def start_grid():
+    grid[6] = [core[0], core[1], core[2], core[3]]
+    grid[7] = [core[2], core[3], core[4], core[5]]
+    grid[8] = [core[4], core[5], core[6], core[7]]
 
-grid[6] = [core[0], core[1], core[2], core[3]]
-grid[7] = [core[2], core[3], core[4], core[5]]
-grid[8] = [core[4], core[5], core[6], core[7]]
-
-grid[0] = [0, 0, 0, core[0]]
-grid[1] = [0, core[0], 0, core[2]]
-grid[2] = [0, core[2], 0, core[4]]
-grid[3] = [0, core[4], 0, core[6]]
-grid[4] = [0, core[6], 0, 0]
-grid[5] = [0, 0, core[0], core[1]]
-grid[9] = [core[6], core[7], 0, 0]
-grid[10] = [0, 0, core[1], 0]
-grid[11] = [core[1], 0, core[3], 0]
-grid[12] = [core[3], 0, core[5], 0]
-grid[13] = [core[5], 0, core[7], 0]
-grid[14] = [core[7], 0, 0, 0]
+    grid[0] = [0, 0, 0, core[0]]
+    grid[1] = [0, core[0], 0, core[2]]
+    grid[2] = [0, core[2], 0, core[4]]
+    grid[3] = [0, core[4], 0, core[6]]
+    grid[4] = [0, core[6], 0, 0]
+    grid[5] = [0, 0, core[0], core[1]]
+    grid[9] = [core[6], core[7], 0, 0]
+    grid[10] = [0, 0, core[1], 0]
+    grid[11] = [core[1], 0, core[3], 0]
+    grid[12] = [core[3], 0, core[5], 0]
+    grid[13] = [core[5], 0, core[7], 0]
+    grid[14] = [core[7], 0, 0, 0]
+    return grid
 
 #print(grid)
 
